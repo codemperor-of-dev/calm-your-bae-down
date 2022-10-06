@@ -1,0 +1,131 @@
+/* Landing page styling - start here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  margin: 300px 0 50px;
+  padding: 0 200px;
+}
+
+.content {
+  font-size: 20px;
+  text-align: start;
+  width: 50%;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #163a5f;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.content p {
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+:root {
+  --bg: #fff;
+  --color: #163a5f;
+  --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+  padding: 1.5rem 0;
+  filter: url("#goo");
+}
+
+.button {
+  margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+  background: var(--color);
+  color: var(--bg);
+  font-weight: bold;
+  padding: 1.18em 1.32em 1.03em;
+  line-height: 1;
+  border-radius: 1em;
+  position: relative;
+  min-width: 8.23em;
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 1.25rem;
+  letter-spacing: 2.3px;
+}
+
+.button:before,
+.button:after {
+  width: 4.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: var(--color);
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.button:before {
+  top: -25%;
+  left: 20%;
+}
+
+.button:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+  transform: none;
+}
+
+@media all and (max-width: 1750px) {
+  main {
+    padding: 0 20px;
+  }
+
+  .content {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .content {
+    width: 100%;
+  }
+  .content p {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* Landing page styling - done here */
