@@ -1,0 +1,96 @@
+/* redirectLink page styling - start here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.link-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.text {
+  color: #1d566e;
+  width: 40%;
+}
+
+.text h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.text p {
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+#result-link-box {
+  border: 1px solid;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#result-link-box i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#result-link-box i:hover {
+  color: #1d566e96;
+}
+
+@media all and (max-width: 1400px) {
+  .img {
+    width: 40%;
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  .text {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .link-info {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+  }
+
+  .img {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .link-info {
+    padding: 100px 20px;
+  }
+}
+
+/* redirectLink page styling - done here */
