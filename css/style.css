@@ -12,12 +12,21 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  background-color:  #1d566e;
+  border-radius: 4px;
+}
+
+header img {
+  margin-right: 20px;
+}
+
 main {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  margin: 300px 0 50px;
+  margin: 150px 0 50px;
   padding: 0 200px;
 }
 
@@ -31,7 +40,7 @@ main {
 .content h1 {
   font-size: 36px;
   letter-spacing: 2px;
-  color: #163a5f;
+  color: #1d566e;
   font-weight: 900;
   margin-bottom: 30px;
 }
@@ -43,7 +52,7 @@ main {
 
 :root {
   --bg: #fff;
-  --color: #163a5f;
+  --color:  #1d566e;
   --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -99,6 +108,10 @@ main {
   transform: none;
 }
 
+.button:hover {
+  color: #fff;
+}
+
 @media all and (max-width: 1750px) {
   main {
     padding: 0 20px;
@@ -120,10 +133,12 @@ main {
   .content {
     width: 100%;
   }
+
   .content p {
     width: 100%;
   }
-  img {
+  
+.img img {
     width: 100%;
   }
 }

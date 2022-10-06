@@ -1,3 +1,5 @@
+/* getEmal page styling - done here */
+
 @import url("https://fonts.googleapis.com/css?family=Karla");
 
 html,
@@ -6,15 +8,16 @@ body {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 40px;
   background-color: #e6e6e6;
   font-family: "Karla";
-  background-image:url('../public/EmailBg.png');
-background-repeat:no-repeat;
-background-size:contain;
-background-position:center;
+  background-image: url("../assests//EmailBg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  overflow-x: hidden;
 }
 
 .form-signin {
@@ -24,18 +27,25 @@ background-position:center;
 }
 
 .form-signin button {
-    background-color: #21ABA5;
-    border-radius: 8px;
+  background-color: #21aba5;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 400px) {
-    .form-signin {
-        display: flex;
-        flex-direction: column;
-    }
+  .form-signin {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 header {
-    background-color: #1D566E;
-    border-radius: 4px;
+  background-color: #1d566e;
+  border-radius: 4px;
 }
+
+header img {
+  margin-right: 20px;
+}
+
+
+/* getEmail page styling - done here */
