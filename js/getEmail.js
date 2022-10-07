@@ -9,8 +9,11 @@ submitBtn.addEventListener("click", (e) => {
 
   ////   if it's valid
   if (pattern.test(emailInputVale)) {
+    //encrypting
+    let encodeBase = window.btoa(emailInputVale);
+
     // storing email
-    localStorage.setItem("email", emailInputVale);
+    localStorage.setItem("email", encodeBase);
 
     //  Going to redirect Link page from getEmail page
     let gettingEmail = localStorage.getItem("email");
@@ -30,3 +33,5 @@ submitBtn.addEventListener("click", (e) => {
     return;
   }
 });
+
+/// c3VteWF0YXVuZzE1ODRAZ21haWwuY29t
