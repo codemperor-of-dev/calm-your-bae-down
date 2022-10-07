@@ -1,8 +1,32 @@
-////// Going to redirect Link page from getEmail page with submit button
-
 const submitBtn = document.querySelector("#submitBtn");
+const emailInput = document.getElementById("emailInput");
+
+let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  location.href = "../pages/redirectLink.html";
+  let emailInputVale = emailInput.value;
+
+  ////   if it's valid
+  if (pattern.test(emailInputVale)) {
+    // storing email
+    localStorage.setItem("email", emailInputVale);
+
+    //  Going to redirect Link page from getEmail page
+    let gettingEmail = localStorage.getItem("email");
+    location.href = `../pages/redirectLink.html?email=${gettingEmail}`;
+
+    //clearing input
+    emailInput.value = "";
+  }
+
+  //// if the value is empty --
+  else if (emailInputVale == "" || emailInputVale == null) {
+    return;
+  }
+
+  ////  otherwise
+  else {
+    return;
+  }
 });
