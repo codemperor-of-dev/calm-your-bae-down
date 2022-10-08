@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+.card {
+  border-color: #1d566e;
+}
+
 .form-signin {
   max-width: 550px;
   min-width: 400px;
@@ -27,8 +31,9 @@ body {
 }
 
 .form-signin button {
-  background-color: #21aba5;
+  background-color: #1d566e;
   border-radius: 8px;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 400px) {
