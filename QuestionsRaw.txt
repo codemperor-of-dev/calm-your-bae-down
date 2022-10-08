@@ -43,5 +43,5 @@
 
 idURLSample = calm-your-bae-down.github.io/1?moteName=ArNuuKyoung
               calm-your-bae-down.github.io/8
-
+ 
 ourURLToBaeCamDownSample = bae-calm-down.github.io?email=name@example.com
